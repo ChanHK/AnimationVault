@@ -27,7 +27,7 @@ body {
   height: 200px;
   background-color: #2a9d8f;
   border-radius: 0 0 200px 200px;
-  bottom: 250px;
+  margin-top: 150px;
   position: absolute;
 }
 
@@ -37,7 +37,7 @@ body {
   border-radius: 0 150px 150px 0;
   background-color: inherit;
   border: 20px solid #e9ecef;
-  bottom: 335px;
+  margin-top: 152px;
   margin-left: 300px;
   position: absolute;
 }
@@ -47,7 +47,7 @@ body {
   height: 20px;
   background-color: #264653;
   border-radius: 0 0 100px 100px;
-  bottom: 250px;
+  margin-top: 330px;
   position: absolute;
 }
 
@@ -57,24 +57,24 @@ body {
   width: 150px;
   border-radius: 50%;
   background-color: #fff;
-  bottom: 350px;
+  margin-top: 80px;
   margin-left: 75px;
   opacity: 0;
 }
 
 .steam1 {
-  -webkit-animation: steam1 4s ease-out infinite;
-  animation: steam1 4s ease-out infinite;
+  -webkit-animation: floatLeft 4s ease-out infinite;
+  animation: floatLeft 4s ease-out infinite;
 }
 
 .steam3 {
-  -webkit-animation: steam1 4s ease-out 1s infinite;
-  animation: steam1 4s ease-out 1s infinite;
+  -webkit-animation: floatLeft 4s ease-out 1s infinite;
+  animation: floatLeft 4s ease-out 1s infinite;
 }
 
 .steam2 {
-  -webkit-animation: floatLeft 4s ease-out 0.5s infinite;
-  animation: floatLeft 4s ease-out 0.5s infinite;
+  -webkit-animation: floatRight 4s ease-out 0.5s infinite;
+  animation: floatRight 4s ease-out 0.5s infinite;
 }
 
 .steam4 {
