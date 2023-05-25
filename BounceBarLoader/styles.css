@@ -1,0 +1,120 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0f0e17;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container {
+  height: 100px;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container > div {
+  width: 16px;
+  height: 100%;
+}
+
+.bar1 {
+  background-color: #754fa0;
+  animation: bounce 0.8s ease-in-out infinite;
+  -moz-animation: bounce 0.8s ease-in-out infinite;
+  -webkit-animation: bounce 0.8s ease-in-out infinite;
+  -o-animation: bounce 0.8s ease-in-out infinite;
+}
+
+.bar2 {
+  background-color: #09b7bf;
+
+  animation: bounce 0.8s ease-in-out infinite;
+  -moz-animation: bounce 0.8s ease-in-out infinite;
+  -webkit-animation: bounce 0.8s ease-in-out infinite;
+  -o-animation: bounce 0.8s ease-in-out infinite;
+
+  animation-delay: -0.7s;
+  -moz-animation-delay: -0.7s;
+  -webkit-animation-delay: -0.7s;
+  -o-animation-delay: -0.7s;
+}
+
+.bar3 {
+  background-color: #90d36b;
+
+  animation: bounce 0.8s ease-in-out infinite;
+  -moz-animation: bounce 0.8s ease-in-out infinite;
+  -webkit-animation: bounce 0.8s ease-in-out infinite;
+  -o-animation: bounce 0.8s ease-in-out infinite;
+
+  animation-delay: -0.6s;
+  -moz-animation-delay: -0.6s;
+  -webkit-animation-delay: -0.6s;
+  -o-animation-delay: -0.6s;
+}
+
+.bar4 {
+  background-color: #f2d36b;
+
+  animation: bounce 0.8s ease-in-out infinite;
+  -moz-animation: bounce 0.8s ease-in-out infinite;
+  -webkit-animation: bounce 0.8s ease-in-out infinite;
+  -o-animation: bounce 0.8s ease-in-out infinite;
+
+  animation-delay: -0.5s;
+  -moz-animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  -o-animation-delay: -0.5s;
+}
+
+.bar5 {
+  background-color: #f04ada;
+
+  animation: bounce 0.8s ease-in-out infinite;
+  -moz-animation: bounce 0.8s ease-in-out infinite;
+  -webkit-animation: bounce 0.8s ease-in-out infinite;
+  -o-animation: bounce 0.8s ease-in-out infinite;
+
+  animation-delay: -0.4s;
+  -moz-animation-delay: -0.4s;
+  -webkit-animation-delay: -0.4s;
+  -o-animation-delay: -0.4s;
+}
+
+.bar6 {
+  background-color: #de1e14;
+
+  animation: bounce 0.8s ease-in-out infinite;
+  -moz-animation: bounce 0.8s ease-in-out infinite;
+  -webkit-animation: bounce 0.8s ease-in-out infinite;
+  -o-animation: bounce 0.8s ease-in-out infinite;
+
+  animation-delay: -0.3s;
+  -moz-animation-delay: -0.3s;
+  -webkit-animation-delay: -0.3s;
+  -o-animation-delay: -0.3s;
+}
+
+@keyframes bounce {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.05);
+    -webkit-transform: scaleY(0.05);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
