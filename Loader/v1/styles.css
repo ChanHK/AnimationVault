@@ -30,80 +30,163 @@ body {
   border-radius: 50%;
 }
 
-.container div:nth-child(1)::after {
+.container div:nth-child(1)::after,
+.container div:nth-child(2)::after,
+.container div:nth-child(3)::after,
+.container div:nth-child(4)::after,
+.container div:nth-child(5)::after,
+.container div:nth-child(6)::after,
+.container div:nth-child(7)::after,
+.container div:nth-child(8)::after,
+.container div:nth-child(9)::after,
+.container div:nth-child(10)::after,
+.container div:nth-child(11)::after,
+.container div:nth-child(12)::after {
+  --c: red;
+  --t: 50%;
+  --l: 100%;
+  --r: 0%;
+  --w: 50px;
+  --h: 50px;
   content: "";
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
-  top: 50%;
-  left: 100%;
-  background-color: red;
   z-index: 10;
+  background-color: var(--c);
+  top: var(--t);
+  left: var(--l);
+  right: var(--r);
+  width: var(--w);
+  height: var(--h);
+}
+
+.container div:nth-child(1)::after {
+  --c: #7b68ee;
+  --t: 50%;
+  --l: 100%;
+  --w: 50px;
+  --h: 50px;
 }
 
 .container div:nth-child(2)::after {
-  content: "";
-  position: absolute;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  top: 80%;
-  left: 90%;
-  background-color: blue;
-  z-index: 10;
+  --c: #3cb371;
+  --t: 80%;
+  --l: 90%;
+  --w: 40px;
+  --h: 40px;
 }
 
 .container div:nth-child(3)::after {
-  content: "";
-  position: absolute;
-  transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  top: 100%;
-  left: 65%;
-  background-color: green;
-  z-index: 10;
+  --c: #9370db;
+  --t: 100%;
+  --l: 65%;
+  --w: 30px;
+  --h: 30px;
 }
 
 .container div:nth-child(4)::after {
-  content: "";
-  position: absolute;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  top: 95%;
-  left: 30%;
-  background-color: purple;
-  z-index: 10;
+  --c: #00fa9a;
+  --t: 95%;
+  --l: 30%;
+  --w: 20px;
+  --h: 20px;
 }
 
-.container div:nth-child(1) {
+.container div:nth-child(5)::after {
+  --c: #40e0d0;
+  --t: 40%;
+  --l: 30%;
+  --w: 35px;
+  --h: 35px;
+}
+
+.container div:nth-child(6)::after {
+  --c: #ba55d3;
+  --t: 70%;
+  --l: 120%;
+  --w: 60px;
+  --h: 60px;
+}
+
+.container div:nth-child(7)::after {
+  --c: #66cdaa;
+  --t: 70%;
+  --l: 150%;
+  --w: 40px;
+  --h: 40px;
+}
+
+.container div:nth-child(8)::after {
+  --c: #0000cd;
+  --t: 60%;
+  --l: 80%;
+  --w: 25px;
+  --h: 25px;
+}
+
+.container div:nth-child(9)::after {
+  --c: #c71585;
+  --t: 0%;
+  --l: 80%;
+  --w: 45px;
+  --h: 45px;
+}
+
+.container div:nth-child(10)::after {
+  --c: #8A2BE2;
+  --t: 0%;
+  --r: 80%;
+  --w: 45px;
+  --h: 45px;
+}
+
+.container div:nth-child(11)::after {
+  --c: #E2062C;
+  --t: 0%;
+  --r: 80%;
+  --w: 65px;
+  --h: 65px;
+}
+
+.container div:nth-child(12)::after {
+  --c: #E9BC3F;
+  --t: -20%;
+  --r: 110%;
+  --w: 50px;
+  --h: 50px;
+}
+
+.container div:nth-child(1),
+.container div:nth-child(5),
+.container div:nth-child(9) {
   animation: turn 5s linear infinite;
   -moz-animation: turn 5s linear infinite;
   -webkit-animation: turn 5s linear infinite;
   -o-animation: turn 5s linear infinite;
 }
 
-.container div:nth-child(2) {
+.container div:nth-child(2),
+.container div:nth-child(6),
+.container div:nth-child(10) {
   animation: turn 4s linear infinite;
   -moz-animation: turn 4s linear infinite;
   -webkit-animation: turn 4s linear infinite;
   -o-animation: turn 4s linear infinite;
 }
 
-.container div:nth-child(3) {
+.container div:nth-child(3),
+.container div:nth-child(7),
+.container div:nth-child(11) {
   animation: turn 3s linear infinite;
   -moz-animation: turn 3s linear infinite;
   -webkit-animation: turn 3s linear infinite;
   -o-animation: turn 3s linear infinite;
 }
 
-.container div:nth-child(4) {
+.container div:nth-child(4),
+.container div:nth-child(8),
+.container div:nth-child(12) {
   animation: turn 2s linear infinite;
   -moz-animation: turn 2s linear infinite;
   -webkit-animation: turn 2s linear infinite;
