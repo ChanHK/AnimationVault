@@ -1,0 +1,120 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0f0e17;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container div {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.container div:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 50%;
+  left: 100%;
+  background-color: red;
+  z-index: 10;
+}
+
+.container div:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 80%;
+  left: 90%;
+  background-color: blue;
+  z-index: 10;
+}
+
+.container div:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 100%;
+  left: 65%;
+  background-color: green;
+  z-index: 10;
+}
+
+.container div:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 95%;
+  left: 30%;
+  background-color: purple;
+  z-index: 10;
+}
+
+.container div:nth-child(1) {
+  animation: turn 5s linear infinite;
+  -moz-animation: turn 5s linear infinite;
+  -webkit-animation: turn 5s linear infinite;
+  -o-animation: turn 5s linear infinite;
+}
+
+.container div:nth-child(2) {
+  animation: turn 4s linear infinite;
+  -moz-animation: turn 4s linear infinite;
+  -webkit-animation: turn 4s linear infinite;
+  -o-animation: turn 4s linear infinite;
+}
+
+.container div:nth-child(3) {
+  animation: turn 3s linear infinite;
+  -moz-animation: turn 3s linear infinite;
+  -webkit-animation: turn 3s linear infinite;
+  -o-animation: turn 3s linear infinite;
+}
+
+.container div:nth-child(4) {
+  animation: turn 2s linear infinite;
+  -moz-animation: turn 2s linear infinite;
+  -webkit-animation: turn 2s linear infinite;
+  -o-animation: turn 2s linear infinite;
+}
+
+@keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
