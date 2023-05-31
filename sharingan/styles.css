@@ -1,0 +1,107 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0f0e17;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.eye {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  background-color: #fffff0;
+  border-radius: 5% 80% 5% 80%;
+  transform: rotate(-50deg);
+}
+
+.pupil {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #8b0000;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #1c1c1c;
+  animation: turn 2s linear infinite;
+  -moz-animation: turn 2s linear infinite;
+  -webkit-animation: turn 2s linear infinite;
+  -o-animation: turn 2s linear infinite;
+}
+
+.iris {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tomoe {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #1c1c1c;
+  border-radius: 50%;
+}
+
+.tomoeTail {
+  height: 18px;
+  width: 10px;
+  background-color: #1c1c1c;
+  position: relative;
+  top: -9px;
+  left: 4px;
+  border-radius: 0% 145% 0% 90%;
+  transform: rotateZ(60deg) skewY(30deg);
+}
+
+.tomoeTailPos1 {
+  left: 30px;
+  top: 60px;
+  transform: rotate(-60deg);
+}
+
+.tomoeTailPos2 {
+  left: 110px;
+  top: 40px;
+  transform: rotate(50deg);
+}
+
+.tomoeTailPos3 {
+  bottom: 30px;
+  right: 70px;
+  transform: rotate(180deg);
+}
+
+.center {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #1c1c1c;
+}
+
+@keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
